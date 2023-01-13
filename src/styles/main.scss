@@ -1,12 +1,255 @@
 // @import "base";
 // You need the base only when you are not using bootstrap. In that case, go to _base.scss
 // to customize it as you may want.
-
+@import "base";
 @import "variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Write your sass code here or import partials
-
-h1 {
-  color: tomato;
+@font-face {
+  font-family: "Monoton", cursive;
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans&display=swap");
 }
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.infobar,
+.links,
+.social {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 200px;
+  width: 100%;
+  margin-left: 35px;
+  font-size: 1.8rem;
+  color: $merry;
+  text-shadow: 0 15px 25px $perry;
+  p {
+    color: rgba(255, 140, 140, 0.616);
+    margin-left: 10px;
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-decoration: overline;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  b {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .font {
+    font-family: "Monoton";
+    font-size: 3rem;
+  }
+  .navbar {
+    position: absolute;
+    top: 15px;
+    right: 5%;
+  }
+}
+
+.navbar a {
+  color: $merry;
+}
+
+button {
+  background-color: rgba(173, 216, 230, 0.164);
+  border: 4px solid $secondary;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  margin-left: 45px;
+  margin-top: 50px;
+
+  a {
+    text-decoration: none;
+    color: $merry;
+  }
+  &hover {
+    color: $primary;
+  }
+}
+
+
+
+
+@media screen and (min-width: 950px) {
+  button {
+    display: none;
+  }
+
+  span {
+    display: none;
+  }
+  body {
+    background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 280px;
+    width: 25%;
+    margin-left: 200px;
+    font-size: 1.8rem;
+    color: $merry;
+    text-shadow: 0 15px 25px $perry;
+    p {
+      color: rgba(255, 140, 140, 0.616);
+      margin-left: 10px;
+      margin-top: 30px;
+      font-weight: 400;
+      font-family: "Open Sans";
+      text-decoration: overline;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    b {
+      font-size: 4.5rem;
+    }
+    h2 {
+      font-size: 5rem;
+    }
+    .font {
+      font-family: "Monoton";
+      font-size: 4.5rem;
+    }
+  }
+  h1:hover {
+    animation: rubberband 0.6s ease-out;
+    color: $secondary;
+  }
+  h2:hover {
+    animation: rubberband 0.6s ease-out;
+    color: $secondary;
+  }
+
+  b:hover {
+    animation: rubberband 0.6s ease-out;
+    cursor: crosshair;
+    color: $secondary;
+  }
+  @keyframes rubberband {
+    0% {
+      transform: scaleX(1px) scaleY(1) rotate(360deg) ;
+    }
+    40% {
+      transform: scaleX(1.12px) scaleY(0.75);
+    }
+    55% {
+      transform: scaleX(0.85) scaleY(1);
+    }
+    65% {
+      transform: scaleX(1.09) scaleY(0.85);
+    }
+    75% {
+      transform: scaleX(0.9) scaleY(1);
+    }
+    90% {
+      transform: scaleX(1.05) scaleY(0.95);
+    }
+    100% {
+      transform: scaleX(1) scaleY(1);
+    }
+  }
+
+  section {
+
+    .infobar {display: block;
+   
+      .Me {
+        font-size: 7rem;
+        color: $danger;
+        font-family: "Monoton";
+        margin-left: 5px;
+        animation: rubberband 3s infinite ease-out;
+        text-shadow: 0 15px 25px $perry;
+      }
+      .me {
+        color: $merry;
+        font-size: 2rem;
+        margin-left: 12px;
+        padding-bottom: 10px;
+        font-family: "Open Sans", sans-serif;
+      }
+    
+      .wd {
+        color: $secondary;
+        margin-left: 5px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+
+
+
+
+
+
+    li {
+      list-style: none;
+    }
+    position: fixed;
+    top: 0;
+    background-color: $primary;
+   height: 100vh;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+ 
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: $danger;
+    font-family: "Open Sans", sans-serif;
+
+    &:hover {
+      color: $merry;
+    }
+  }
+  .social {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 35px;
+    li {
+      margin: 5px;
+    }
+  }
+} 
+.links {
+  display: block;
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $secondary;
+    width: 100%;
+    padding-left: 20px;
+  }
+}
+
+
+
+
+
+}
+
+
+
+
+
