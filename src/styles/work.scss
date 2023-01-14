@@ -1,0 +1,223 @@
+@import "variables";
+@import "base";
+
+body {
+  background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  display: none;
+}
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  background-color: $primary;
+  height: 100vh;
+  width: 120px;
+
+  .infobar {
+    display: block;
+    li {
+      list-style: none;
+    }
+    .Me {
+      font-size: 7rem;
+      color: $danger;
+      font-family: "Monoton";
+      margin-left: 5px;
+      font-size: 7rem;
+      color: $danger;
+      font-family: "Monoton";
+      text-shadow: 0 15px 25px $perry;
+      animation: rubberband 3.6s infinite reverse;
+    }
+    .me {
+      color: $merry;
+      margin-left: 12px;
+      padding-bottom: 10px;
+      font-family: "Open Sans", sans-serif;
+
+      a {
+        font-size: 2rem;
+      }
+    }
+
+    .wd {
+      color: $secondary;
+      margin-left: 5px;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+
+  .links {
+    display: block;
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $secondary;
+      width: 100%;
+      padding-left: 20px;
+    }
+  }
+  @keyframes rubberband {
+    0% {
+      transform: scaleX(1.3) scaleY(1) rotate(360deg);
+    }
+    40% {
+      transform: scaleX(1.12) scaleY(0.75);
+    }
+    55% {
+      transform: scaleX(0.85) scaleY(1);
+    }
+    65% {
+      transform: scaleX(1.09) scaleY(0.85);
+    }
+    75% {
+      transform: scaleX(1) scaleY(1);
+    }
+    90% {
+      transform: scaleX(1.05) scaleY(0.95);
+    }
+    100% {
+      transform: scaleX(1.2) scaleY(1);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: $danger;
+    font-family: "Open Sans", sans-serif;
+
+    &:hover {
+      color: $merry;
+    }
+  }
+  .social {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    li {
+      margin: 5px;
+    }
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(209, 208, 208, 0.24);
+  height: 100vh;
+
+  .projects {
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    ;
+    border: 2px solid $danger;
+   
+    animation: up 3s  2  ease-out;
+    transition: 0.5s;
+border-radius: 20px;
+    a{text-decoration: none;
+color: rgba(240, 248, 255, 0);
+
+    &:hover{display: block;
+     color: $secondary;
+        background-color: aqua;
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+        padding-top: 45px;
+        padding-left: 20px;
+        transition: 0.5s ;
+     }
+
+ }
+  }
+
+
+
+  div:nth-of-type(1) {
+    background-image: url(../Images/20230114_124428.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 10em;
+    left: 12em;
+ 
+    animation: down 2.4s 1  linear alternate;
+  }
+
+  div:nth-of-type(2) {
+    background-image: url(../Images/20230114_124541.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 20em;
+    left: 33em;
+   
+    animation: up 2.4s 1 linear alternate;
+  }
+
+  div:nth-of-type(3) {
+    background-image: url(../Images/20230114_124800.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 10em;
+    left: 54em;
+   
+    animation: up 2.4s 1 linear alternate;
+  }
+  div:nth-of-type(4) {
+    background-image: url(../Images/20230114_125106.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right:5em;
+    top: 10em;
+   
+    animation: down 2.4s 1 linear alternate;
+  }
+
+  div:nth-of-type(5) {
+    background-image: url(../Images/20230114_124428.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 20.5em;
+    left: 75em;
+  
+    animation: down 2.4s 1 linear alternate;
+  }
+
+}
+@keyframes up {
+    0%{transform: translateY(0);
+    }
+    50%{transform: translateY(60%) rotate(180deg);
+    }
+    
+  }
+  @keyframes down {
+    0%{transform: translateY(0);}
+    50%{ transform: translateY(60%)  rotate(180deg);}
+  }
+
+

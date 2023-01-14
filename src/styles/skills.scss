@@ -2,20 +2,135 @@
 @import "base";
 
 body {
+    background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    background-size: cover;
+background-repeat: no-repeat;
+}
+
+.navbar {
+    position: fixed;
+    top: 2%;
+    right: 9%;
+    font-size: 2rem;
+    a{color: $merry;}
+  }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }.sec1 {
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 2rem;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: $merry;
+      text-shadow: 0 15px 25px $perry;
+    }
+    h2 {
+      display: none;
+    }
+  
+    b {
+      font-size: 1.5rem;
+      color: $merry;
+    }
+    p{display: none;
+    width: 100%;}
+  
+    article {
+      margin-top: 5px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+      width: 50%;
+    }
+  }
+  
+  .sec3{
+      margin-top: 10px;
+      margin-right: 5rem;
+      padding-bottom: 10px;
+      
+      h2{
+          font-size: 2.4rem;
+          color:$merry;
+          margin-bottom: 10px;
+          text-shadow: 0 15px 25px $perry;
+      }
+      
+      .div1{
+  
+          height: 8px;
+          width: 100%;
+      border: 3px solid;
+      margin-top: 5px;
+      background-color: $primary;
+      margin-bottom: 5px;
+      }
+  
+      .divJs{width: 20%;
+          height: 3px;
+          background-color: $secondary;
+    }
+    
+      .divH{width: 90%;
+          height: 3px;
+      background-color:$danger;}
+     .divcss{
+      width:80%;
+          height: 3px;
+      background-color: $perry ;}
+          }
+  
+          .divC{width: 85%;
+              height: 3px;
+          background-color:$merry ;}
+          .divL{width: 80%;
+              height: 3px;
+          background-color:$secondary;}
+          .divT{width: 85%;
+              height: 3px;
+          background-color:$danger ;}
+          .divLd{width: 90%;
+              height: 3px;
+          background-color: $perry;}
+          .sidebar{display: none;}
+
+          footer{
+            
+            width: 70%;
+            margin-left: 2rem;
+            h3{font-size: 2rem;}
+            i{color: $merry;
+            font-size: 1.5rem;
+            
+        }
+        }
+  
+@media screen and (min-width:1024px) {
+    
+
+body {
     background: linear-gradient(0.25turn, $danger, $perry);
   background-repeat: no-repeat;
 display: flex;
 justify-content: center;
 align-items: center;
-  height: 100vh;
+height: 100vh;
 }
+
+.navbar {
+    display: none;
+  }
 main {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .sec1 {
-  width: 50%;
+  width: 100%;
   margin-top: 5rem;
   margin-left: 15rem;
   h1 {
@@ -25,22 +140,25 @@ main {
     text-shadow: 0 15px 25px $perry;
   }
   h2 {
+    display: block;
     font-size: 2.2rem;
     margin-bottom: 10px;
     color: $perry;
     text-shadow: 0 15px 25px $primary;
+    animation: rubberband 3s 2 alternate-reverse ease-in-out;
   }
 
   b {
     font-size: 1.5rem;
     color: $merry;
   }
-
+p{display: block;}
   article {
     margin-top: 5px;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 5px;
+    width: 70%;
   }
 }
 
@@ -90,33 +208,11 @@ main {
         background-color: $perry;}
 
   
-@keyframes rubberband {
-  0% {
-    transform: scaleX(1px) scaleY(1) rotate(360deg);
-  }
-  40% {
-    transform: scaleX(1.12px) scaleY(0.75);
-  }
-  55% {
-    transform: scaleX(0.85) scaleY(1);
-  }
-  65% {
-    transform: scaleX(1.09) scaleY(0.85);
-  }
-  75% {
-    transform: scaleX(0.9) scaleY(1);
-  }
-  90% {
-    transform: scaleX(1.05) scaleY(0.95);
-  }
-  100% {
-    transform: scaleX(1) scaleY(1);
-  }
-}
+
 .sidebar {
   .infobar {
     display: block;
-
+    a{font-size: 2rem;}
     .Me {
       font-size: 7rem;
       color: $danger;
@@ -138,6 +234,33 @@ main {
       margin-left: 5px;
       font-family: "Open Sans", sans-serif;
     }
+    @keyframes rubberband {
+        0% {
+          transform: scaleX(1px) scaleY(1) rotate(360deg);
+        }
+        40% {
+          transform: scaleX(1.12px) scaleY(0.75);
+        }
+        55% {
+          transform: scaleX(0.85) scaleY(1);
+        }
+        65% {
+          transform: scaleX(1.09) scaleY(0.85);
+        }
+        75% {
+          transform: scaleX(0.9) scaleY(1);
+        }
+        90% {
+          transform: scaleX(1.05) scaleY(0.95);
+        }
+        100% {
+          transform: scaleX(1) scaleY(1);
+        }
+      }
+
+
+
+
   }
 
   li {
@@ -183,6 +306,7 @@ main {
   }
 }
 footer{
+    margin-top: 5rem;
     width: 50%;
     margin-right: 10rem;
     h3{font-size: 2rem;}
@@ -190,4 +314,6 @@ footer{
     font-size: 1.5rem;
     
 }
+}
+
 }

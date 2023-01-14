@@ -117,12 +117,15 @@ button {
     }
     h1 {
       font-size: 5rem;
+      animation: up 2s 1 linear;
     }
     b {
       font-size: 4.5rem;
+      animation: up 2s 1  linear;
     }
     h2 {
       font-size: 5rem;
+      animation: up 2s 1  linear;
     }
     .font {
       font-family: "Monoton";
@@ -130,22 +133,35 @@ button {
     }
   }
   h1:hover {
-    animation: rubberband 0.6s ease-out;
+
     color: $secondary;
   }
   h2:hover {
-    animation: rubberband 0.6s ease-out;
+    
     color: $secondary;
   }
 
   b:hover {
-    animation: rubberband 0.6s ease-out;
+  
     cursor: crosshair;
     color: $secondary;
   }
+  @keyframes up {
+    0%{transform: translateY(0);
+    }
+    50%{transform: translateY(60%) rotate(180deg);
+    }
+    
+  }
+  @keyframes down {
+    0%{transform: translateY(0);}
+    50%{ transform: translateY(60%)  rotate(180deg);}
+  }
+
+
   @keyframes rubberband {
     0% {
-      transform: scaleX(1px) scaleY(1) rotate(360deg) ;
+      transform: scaleX(1px) ;
     }
     40% {
       transform: scaleX(1.12px) scaleY(0.75);
@@ -154,16 +170,16 @@ button {
       transform: scaleX(0.85) scaleY(1);
     }
     65% {
-      transform: scaleX(1.09) scaleY(0.85);
+      transform: scaleX(1.09) scaleY(0.85)  ;
     }
     75% {
-      transform: scaleX(0.9) scaleY(1);
+      transform: scaleX(0.9) scaleY(1)    ;
     }
     90% {
       transform: scaleX(1.05) scaleY(0.95);
     }
     100% {
-      transform: scaleX(1) scaleY(1);
+      transform: scaleX(1) scaleY(1)  ;
     }
   }
 
