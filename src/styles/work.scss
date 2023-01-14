@@ -2,9 +2,125 @@
 @import "base";
 
 body {
+    background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   width: 100%;
+  }
+ 
+    .navbar {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+        font-size: 2rem;
+        a{color: $merry;}
+      }
+  
+  .sidebar {display:none ;}
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+margin-top: 7rem;
+   height: 100vh;
+  
+    .project1{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+ 
+      flex-wrap: wrap;
+  
+    }
+    div {
+    
+      width: 150px;
+      height: 150px;
+    gap: 1;
+      transition: 0.5s;
+  border-radius: 20px;
+      a{text-decoration: none;
+  color: rgba(240, 248, 255, 0);
+  width: 100%;
+  height: 100%;
+  
+      &:hover{display: block;
+       color: $secondary;
+          background-color: $danger;
+          width: 40px;
+          height: 40px;
+         border-radius: 50%;
+          padding-top: 45px;
+          padding-left: 20px;
+          
+       }
+  
+   }
+    }
+    div:nth-of-type(1) {
+      background-image: url(../Images/vecteezy_crack-easter-eat-egg-abstract-flat-color-icon-template_13460433.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   
+   
+      
+    }
+  
+    div:nth-of-type(2) {
+  background-image: url(../Images/sweetBg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+    }
+  
+    div:nth-of-type(3) {
+      background-image: url(../Images/black-white.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+     
+      
+    }
+ 
+  }
+  .project2{display: flex;
+    justify-content: center;
+    align-items: center;
+  div:nth-of-type(1) {
+    background-image: url(../Images/vecteezy_crack-easter-eat-egg-abstract-flat-color-icon-template_13460433.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear ;
+  }
+
+  div:nth-of-type(2) {
+    background-image: url(../Images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear ;
+  }
+  div:nth-of-type(3) {
+    background-image: url(../Images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear ;
+  }
+}
+   
+  
+
+@media screen and (min-width:1025px) {
+    
+
+body {
   background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 .navbar {
   display: none;
@@ -112,15 +228,16 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background-color: rgba(209, 208, 208, 0.24);
   height: 100vh;
 
-  .projects {
-    border: 3px solid red;
+  .project1{
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
+    
+   
   }
   div {
     display: flex;
@@ -129,10 +246,11 @@ main {
     width: 300px;
     height: 300px;
     border: 2px solid $danger;
-   
+   margin-left:5rem;
     animation: up 3s  2  ease-out;
     transition: 0.5s;
 border-radius: 20px;
+margin-bottom: 10px;
     a{text-decoration: none;
 color: rgba(240, 248, 255, 0);
 
@@ -153,71 +271,55 @@ color: rgba(240, 248, 255, 0);
 
 
   div:nth-of-type(1) {
-    background-image: url(../Images/20230114_124428.png);
+    background-image: url(../Images/vecteezy_crack-easter-eat-egg-abstract-flat-color-icon-template_13460433.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    top: 10em;
-    left: 12em;
- 
-    animation: down 2.4s 1  linear alternate;
+   
+    animation: down 2s 1  linear ;
   }
 
   div:nth-of-type(2) {
-    background-image: url(../Images/20230114_124541.jpg);
+   background-image: url(../Images/sweetBg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    top: 20em;
-    left: 33em;
-   
-    border-radius: 50%;
-    animation: up 2.4s 1 linear alternate;
+    
+    animation: down 2s 1 linear ;
   }
 
   div:nth-of-type(3) {
-    background-image: url(../Images/20230114_124800.png);
+    background-image: url(../Images/black-white.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
-    top: 10em;
-    left: 54em;
-   
-    animation: up 2.4s 1 linear alternate;
+    animation: down 2s 1 linear;
   }
-  div:nth-of-type(4) {
-    background-image: url(../Images/20230114_125106.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    right:5em;
-    top: 10em;
-   
-    animation: down 2.4s 1 linear alternate;
-  }
-
-  div:nth-of-type(5) {
-    background-image: url(../Images/20230114_124428.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    bottom: 20.5em;
-    left: 75em;
-    border-radius: 50%;
-    animation: down 2.4s 1 linear alternate;
-  }
+ 
 
 }
-@keyframes up {
-    0%{transform: translateY(0);
-    }
-    50%{transform: translateY(60%) rotate(180deg);
-    }
-    
-  }
+
   @keyframes down {
-    0%{transform: translateY(0);}
-    50%{ transform: translateY(60%)  rotate(180deg);}
+    0%{transform: translateY(60%)  rotate(90deg);}
+    50%{ transform: translateY(40%)  rotate(0);}
+  }}
+.project2{display: flex;
+    justify-content: center;
+    align-items: center;
+  div:nth-of-type(1) {
+    background-image: url(../Images/vecteezy_crack-easter-eat-egg-abstract-flat-color-icon-template_13460433.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear ;
   }
 
-
+  div:nth-of-type(2) {
+    background-image: url(../Images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear ;
+  }
+  div:nth-of-type(3) {
+    background-image: url(../Images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: down 2s 1 linear ;
+  }
+}

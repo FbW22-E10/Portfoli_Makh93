@@ -147,9 +147,9 @@ button {
     color: $secondary;
   }
   @keyframes up {
-    0%{transform: translateY(0);
+    0%{transform: translateY(0)   rotate(45deg);
     }
-    50%{transform: translateY(60%) rotate(45deg);
+    50%{transform: translateY(60%) rotate(0);
     }
     
   }
