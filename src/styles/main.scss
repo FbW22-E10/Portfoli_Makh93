@@ -149,13 +149,13 @@ button {
   @keyframes up {
     0%{transform: translateY(0);
     }
-    50%{transform: translateY(60%) rotate(180deg);
+    50%{transform: translateY(60%) rotate(45deg);
     }
     
   }
   @keyframes down {
     0%{transform: translateY(0);}
-    50%{ transform: translateY(60%)  rotate(180deg);}
+    50%{ transform: translateY(60%)  rotate(45deg);}
   }
 
 
