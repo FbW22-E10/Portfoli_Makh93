@@ -2,12 +2,15 @@
 @import "base";
 
 body {
-  height: 100vh;
+
   background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  
 }
 section {
   li {
@@ -21,7 +24,7 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  padding-top: 80px;
+padding-bottom: 50px;
 
   li {
     border-bottom: 1px solid $danger;
@@ -48,16 +51,16 @@ header {
   flex-direction: column;
   width: 100%;
   height: 60vh;
-
   font-size: 1.3rem;
   color: $merry;
   text-shadow: 0 15px 25px $perry;
+  
 }
 .social {
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  padding-top: 160px;
+  padding-bottom: 50px;
   margin-left: 45px;
 
   li {
@@ -70,14 +73,18 @@ header {
 section{
   
 .infobar {
- margin-bottom: 250px;
+position: absolute;
+top: 0;
+right: 0;
   background-color: $primary;
- height: 30vh;
+ height: 35vh;
   width: 100%;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
+
+ margin-bottom: 12rem;
 
  
 
@@ -90,8 +97,6 @@ section{
         color: $danger;
         font-family: "Monoton";
         margin-left: 15px;
-        padding-top: 10px;
-        
         animation: rubberband 3s infinite ease-out;
         text-shadow: 0 15px 25px $perry;
   }
@@ -121,10 +126,10 @@ section{
 
   .me {
     color: $merry;
-    font-size: 2rem;
-    margin-left: 20px;
-    padding-bottom: 10px;
+    font-size: 1.8rem;
+    margin-left: 25px;
     
+margin-bottom: 5px;    
     font-family: "Open Sans", sans-serif;
   }
 
@@ -132,16 +137,11 @@ section{
     color: $secondary;
         margin-left: 12px;
         font-family: "Open Sans", sans-serif;
+        padding-bottom: 20px;
   }
 }
 }
-.backtomain a {
-  color: $merry;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  text-shadow: none;
-}
+
 
 li a:hover {
   color: $perry;
@@ -256,20 +256,22 @@ li a:hover {
 
   .links {
     display: block;
+    margin-top: 25rem;
     li {
       list-style: none;
-      margin-bottom: 20px;
       border-bottom: 1px solid $secondary;
       width: 100%;
       padding-left: 20px;
     }
     a {
+      
       color: $danger;
       margin-right: 15px;
     }
   }
   .infobar {
     display: block; 
+    padding-bottom: 40px;
     
     .Me {
       font-size: 7rem;
@@ -294,7 +296,7 @@ li a:hover {
   a {
     text-decoration: none;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-top: 20px;
     color: $danger;
     font-family: "Open Sans", sans-serif;
 
@@ -305,7 +307,6 @@ li a:hover {
   .social {
     display: flex;
     margin-left: 10px;
-    margin-bottom: 35px;
     li {
       margin: 5px;
     }

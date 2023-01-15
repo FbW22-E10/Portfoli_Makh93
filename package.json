@@ -8,6 +8,7 @@
     "about": "rm -rf dev-serve && parcel src/about.html --dist-dir dev-serve",
     "skill": "rm -rf dev-serve && parcel src/skill.html --dist-dir dev-serve",
     "work": "rm -rf dev-serve && parcel src/work.html --dist-dir dev-serve",
+    "contact": "rm -rf dev-serve && parcel src/contact.html --dist-dir dev-serve",
     "build": "rm -rf build && parcel build src/index.html --dist-dir build --public-url ./",
 
     "publish": "gh-pages -d build"
