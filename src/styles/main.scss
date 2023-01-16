@@ -16,11 +16,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/*sidebar*/
 .infobar,
 .links,
 .social {
   display: none;
 }
+
+/*HEADER*/
 header {
   display: flex;
   justify-content: center;
@@ -30,7 +33,7 @@ header {
   margin-left: 35px;
   font-size: 1.8rem;
   color: $merry;
-  text-shadow: 0 15px 25px $perry;
+ 
   p {
     color: rgba(255, 140, 140, 0.616);
     margin-left: 10px;
@@ -56,6 +59,7 @@ header {
     position: absolute;
     top: 15px;
     right: 5%;
+    font-size: 2.5rem;
   }
 }
 
@@ -65,24 +69,29 @@ header {
 
 button {
   background-color: rgba(173, 216, 230, 0.164);
-  border: 4px solid $secondary;
-  padding: 10px 40px;
+  border: 4px solid $perry;
+  padding: 15px 40px;
   font-size: 1.5rem;
   margin-left: 45px;
   margin-top: 50px;
+  background-color: $primary;
+border-radius: 5px;
+border: none;
+
 
   a {
     text-decoration: none;
-    color: $merry;
+    color: $perry;
   }
   &hover {
     color: $primary;
+    border: $perry;
   }
 }
 
 
 
-
+ /*DEsktop Version*/
 @media screen and (min-width: 950px) {
   button {
     display: none;
@@ -92,21 +101,28 @@ button {
     display: none;
   }
   body {
+    position: relative;
     background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
-
+.overlay{background-color: rgba(0, 0, 0, 0.466);
+height: 100vh;
+width: 100%;
+}
+main{
+  background-color: rgba(0, 0, 0, 0.432);
+}
   header {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-top: 280px;
-    width: 25%;
+    width: 30%;
     margin-left: 200px;
     font-size: 1.8rem;
     color: $merry;
-    text-shadow: 0 15px 25px $perry;
+   
     p {
       color: rgba(255, 140, 140, 0.616);
       margin-left: 10px;
@@ -133,19 +149,21 @@ button {
     }
   }
   h1:hover {
-
-    color: $secondary;
-  }
-  h2:hover {
-    
-    color: $secondary;
-  }
-
-  b:hover {
-  
-    cursor: crosshair;
-    color: $secondary;
-  }
+    color:$danger;
+    font-size: 6rem;
+    transition: 0.8s;
+    text-shadow: 0 15px 25px $perry;
+   }
+   h2:hover {
+     color:$danger;
+     font-size: 6rem;
+     transition: 0.8s;text-shadow: 0 15px 25px $perry;
+   }
+ 
+   b:hover {
+     color:$danger;
+     font-size: 5.1rem;
+     transition: 0.8s;text-shadow: 0 15px 25px $perry;}
   @keyframes up {
     0%{transform: translateY(0)   rotate(45deg);
     }
@@ -182,9 +200,21 @@ button {
       transform: scaleX(1) scaleY(1)  ;
     }
   }
+/* Side bar*/
+  .sidebar{
+    position: fixed;
+    top: 0;
+    background-color: $primary;
+   height: 100vh;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 5px;
+  box-shadow: 10px 15px 25px $danger;
+ 
 
-  section {
-
+  
     .infobar {display: block;
    
       .Me {
@@ -193,41 +223,29 @@ button {
         font-family: "Monoton";
         margin-left: 5px;
         animation: rubberband 3s infinite ease-out;
-        text-shadow: 0 15px 25px $perry;
+       
       }
       .me {
         color: $merry;
         font-size: 2rem;
-        margin-left: 12px;
+        margin-left: 10px;
         padding-bottom: 10px;
-        font-family: "Open Sans", sans-serif;
+        font-family: 'Monoton';
+        color: $danger;
       }
     
       .wd {
+        font-size: 1.1rem;
         color: $secondary;
         margin-left: 5px;
         font-family: "Open Sans", sans-serif;
       }
     }
 
-
-
-
-
-
     li {
       list-style: none;
     }
-    position: fixed;
-    top: 0;
-    background-color: $primary;
-   height: 100vh;
-    width: 120px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
- 
-
+   
   a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -236,24 +254,28 @@ button {
     font-family: "Open Sans", sans-serif;
 
     &:hover {
-      color: $merry;
+      font-size: 2rem;
+      transition: 0.8s;
     }
   }
   .social {
     display: flex;
-    margin-left: 10px;
-    margin-bottom: 35px;
+    margin-left: 15px;
+    margin-bottom: 30px;
     li {
       margin: 5px;
     }
+    &hover{font-size: 2.8rem;
+    transition: 0.8s;}
   }
 } 
 .links {
   display: block;
+
   li {
     list-style: none;
     margin-bottom: 20px;
-    border-bottom: 1px solid $secondary;
+    border-bottom: 3px solid $secondary;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;

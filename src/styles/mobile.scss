@@ -24,10 +24,10 @@ section {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-padding-bottom: 50px;
+padding-bottom: 30px;
 
   li {
-    border-bottom: 1px solid $danger;
+    border-bottom: 3px solid $secondary;
     width: 100%;
     list-style: none;
   }
@@ -37,6 +37,11 @@ padding-bottom: 50px;
     align-items: center;
     justify-content: center;
     color: $primary;
+  }
+  &hover{
+    font-size: 4rem;
+    color: $merry;
+    transition: 0.8s;
   }
 }
 .headings {
@@ -71,7 +76,7 @@ header {
   }
 }
 section{
-  
+  box-shadow: 10px 15px 25px $danger;
 .infobar {
 position: absolute;
 top: 0;
@@ -96,9 +101,9 @@ right: 0;
     font-size: 7rem;
         color: $danger;
         font-family: "Monoton";
-        margin-left: 15px;
+        margin-left: 35px;
         animation: rubberband 3s infinite ease-out;
-        text-shadow: 0 15px 25px $perry;
+       
   }
   @keyframes rubberband {
     0% {
@@ -126,16 +131,16 @@ right: 0;
 
   .me {
     color: $merry;
-    font-size: 1.8rem;
-    margin-left: 25px;
-    
-margin-bottom: 5px;    
-    font-family: "Open Sans", sans-serif;
+    font-size: 2.2rem;
+    margin-left: 30px;
+    font-family: 'Monoton';
+    margin-bottom: 5px;    
   }
 
   .wd {
     color: $secondary;
-        margin-left: 12px;
+        margin-left: 15px;
+        font-size: 1.5rem;
         font-family: "Open Sans", sans-serif;
         padding-bottom: 20px;
   }
@@ -160,21 +165,24 @@ li a:hover {
     display: none;
   }
   body {
-    background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
+   
+  
+    background-image:
+    url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  }
+  
 
   header {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-top: 280px;
-    width: 25%;
-    margin-left: 200px;
+    width: 30%;
+    margin-left: 50rem;
     font-size: 1.8rem;
     color: $merry;
-    text-shadow: 0 15px 25px $perry;
+    
     p {
       color: rgba(255, 140, 140, 0.616);
       margin-left: 10px;
@@ -201,20 +209,21 @@ li a:hover {
     }
   }
   h1:hover {
-    animation: rubberband 0.6s ease-out;
-    color: $secondary;
-    cursor: crosshair;
+   color:$danger;
+   font-size: 6rem;
+   transition: 0.8s;text-shadow: 0 15px 25px $perry;
   }
   h2:hover {
-    animation: rubberband 0.6s ease-out;
-    color: $secondary;
-    cursor: crosshair;
+    color:$danger;
+    font-size: 6rem;
+    transition: 0.8s;text-shadow: 0 15px 25px $perry;
   }
 
   b:hover {
-    animation: rubberband 0.6s ease-out;
-    cursor: crosshair;
-    color: $secondary;
+    color:$danger;
+    font-size: 5.1rem;
+    transition: 0.8s;text-shadow: 0 15px 25px $perry;
+   
   }
   @keyframes rubberband {
     0% {
@@ -241,77 +250,90 @@ li a:hover {
   }
 
   section {
-    li {
-      list-style: none;
-    }
     position: fixed;
     top: 0;
     background-color: $primary;
-    height: 100vh;
-    width: 130px;
+   height: 100vh;
+    width: 140px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-  }
+    border-radius: 5px;
+  box-shadow: 0 15px 25px $danger;
+ 
 
-  .links {
-    display: block;
-    margin-top: 25rem;
+  
+    .infobar {display: block;
+   
+      .Me {
+        font-size: 7rem;
+        color: $danger;
+        font-family: "Monoton";
+        margin-left: 5px;
+        animation: rubberband 3s infinite ease-out;
+       
+      }
+      .me {
+        color: $merry;
+        font-size: 2rem;
+        margin-left: 10px;
+        padding-bottom: 10px;
+        font-family: 'Monoton';
+        color: $danger;
+      }
+    
+      .wd {
+        font-size: 1.1rem;
+        color: $secondary;
+        margin-left: 5px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+
     li {
       list-style: none;
-      border-bottom: 1px solid $secondary;
-      width: 100%;
-      padding-left: 20px;
     }
-    a {
-      
-      color: $danger;
-      margin-right: 15px;
-    }
-  }
-  .infobar {
-    display: block; 
-    padding-bottom: 40px;
-    
-    .Me {
-      font-size: 7rem;
-      color: $danger;
-      font-family: "Monoton";
-      margin-left: 5px;
-    }
-    .me {
-      color: $merry;
-      font-size: 2rem;
-      margin-left: 12px;
-      padding-bottom: 10px;
-      font-family: "Open Sans", sans-serif;
-    }
-
-    .wd {
-      color: $secondary;
-      margin-left: 5px;
-      font-family: "Open Sans", sans-serif;
-    }
-  }
+   
   a {
     text-decoration: none;
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin-bottom: 20px;
     color: $danger;
     font-family: "Open Sans", sans-serif;
 
     &:hover {
-      color: $merry;
+      font-size: 2rem;
+      transition: 0.8s;
     }
   }
   .social {
+    
     display: flex;
-    margin-left: 10px;
+    margin-left: 15px;
+    margin-bottom: 30px;
     li {
       margin: 5px;
     }
-    a {
-      color: $danger;
-    }
+    &hover{font-size: 2.5rem;
+    transition: 0.8s;}
+  }
+} }
+.links {
+  display: block;
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $secondary;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
+
+
+
+
+
+
+}
+
