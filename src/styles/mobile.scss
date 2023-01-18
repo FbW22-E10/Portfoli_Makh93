@@ -9,9 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;}
 
-  
-}
 section {
   li {
     list-style: none;
@@ -132,15 +131,20 @@ right: 0;
   .me {
     color: $merry;
     font-size: 2.2rem;
-    margin-left: 30px;
+ 
     font-family: 'Monoton';
-    margin-bottom: 5px;    
+    margin-bottom: 5px;   
+    a{
+      text-decoration: none;
+      color: $danger;
+      margin-left: 40px;
+    } 
   }
 
   .wd {
     color: $secondary;
         margin-left: 15px;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-family: "Open Sans", sans-serif;
         padding-bottom: 20px;
   }
@@ -165,8 +169,6 @@ li a:hover {
     display: none;
   }
   body {
-   
-  
     background-image:
     url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
     background-repeat: no-repeat;
@@ -249,19 +251,18 @@ li a:hover {
     }
   }
 
-  section {
+  .sidebar{
     position: fixed;
     top: 0;
     background-color: $primary;
    height: 100vh;
-    width: 140px;
+    width: 150px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     border-radius: 5px;
-  box-shadow: 0 15px 25px $danger;
+  box-shadow: 10px 15px 25px $danger;
  
-
   
     .infobar {display: block;
    
@@ -269,23 +270,26 @@ li a:hover {
         font-size: 7rem;
         color: $danger;
         font-family: "Monoton";
-        margin-left: 5px;
+        margin-left: 10px;
         animation: rubberband 3s infinite ease-out;
        
       }
       .me {
-        color: $merry;
-        font-size: 2rem;
-        margin-left: 10px;
-        padding-bottom: 10px;
-        font-family: 'Monoton';
         color: $danger;
+       margin-left: -20px;
+        
+        a {
+          font-family: "Monoton";
+          font-size: 2rem;
+          margin-right: 50px;
+          padding-right: 10px;
+        }
       }
     
       .wd {
         font-size: 1.1rem;
         color: $secondary;
-        margin-left: 5px;
+        margin-left: 15px;
         font-family: "Open Sans", sans-serif;
       }
     }
@@ -297,7 +301,7 @@ li a:hover {
   a {
     text-decoration: none;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    text-decoration: none;
     color: $danger;
     font-family: "Open Sans", sans-serif;
 
@@ -310,30 +314,34 @@ li a:hover {
     
     display: flex;
     margin-left: 15px;
-    margin-bottom: 30px;
+    
+  
     li {
-      margin: 5px;
+      margin: 7px;
     }
-    &hover{font-size: 2.5rem;
+    &hover{font-size: 2.8rem;
     transition: 0.8s;}
   }
-} }
+} 
 .links {
   display: block;
+  padding-top: 370px;
+
   li {
+    margin-top: 20px;
     list-style: none;
-    margin-bottom: 20px;
-    border-bottom: 1px solid $secondary;
+    margin-bottom: 10px;
+    border-bottom: 3px solid $secondary;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+   
+}
+a{
+  padding-top: 15px;
+
+}
   }
 }
 
-
-
-
-
-
 }
-
