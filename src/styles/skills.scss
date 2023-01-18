@@ -113,9 +113,10 @@ main {
         
         }
           .divC{
+            width: 85%;
               height: 10px;
               box-shadow: inset 10px 10px 25px $merry; border-radius: 50px;
-              animation: html-fill 2.5s ;
+              animation: html-fill 2.5s forwards;
         
             }
           .divL{
