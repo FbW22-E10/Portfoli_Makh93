@@ -30,7 +30,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+  
   
     h1 {
       font-size: 3rem;
@@ -105,11 +105,11 @@ body {
     
 
 body {
-  height: 100vh;
-  width: 100%;
+  
   background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset 0px 0px 0px 100vmax rgba(0, 0, 0, 0.616);
 }
 .navbar {
   display: none;
@@ -224,17 +224,18 @@ body {
   transform: scaleX(1.2) scaleY(1);
 }}
 main {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 15rem;
+min-height: 100vh;
   margin-left: 20px;
-
+  padding-bottom: 5rem;
 
   h1 {
     font-size: 3rem;
-       margin-top: 5rem;
+    
        margin-right: 400px;
        padding-left: 20px;
        margin-left: 500px;
@@ -245,21 +246,21 @@ main {
 
   h1 {
     font-size: 4rem;
-    margin-left: 40%;
+    margin-left: 50%;
     width: 100%;
     
   }
   p {
     font-size: 1.5rem;
-    width: 50%;
+    width: 40%;
     margin-top: 10px;
     margin-right: 35rem;
-    margin-left: 20px;
+    margin-left: 2rem;
   }
   form {
     font-family: "Open sans";
     width: 45%;
-    margin-right: 50rem;
+    margin-right: 40rem;
     margin-top: 3rem;
 
     input {

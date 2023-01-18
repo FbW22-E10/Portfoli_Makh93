@@ -97,6 +97,8 @@
   }
 
   /*Image*/
+
+
   .mypicture {
     display: none;
   }
@@ -131,6 +133,7 @@ p {
     background-color: rgba(0, 0, 0, 0.432);
     min-height: 100vh;
     padding-top: 40px;
+    padding-left: 20px;
    
   }
   .navbar {
@@ -255,13 +258,15 @@ main {
 width: 100%;
   .mypicture {
     display: block;
+    
   
   
     img {
+      display: block    ;
       position: fixed;
       border-radius: 50%;
       top: 20%;
-      left: 50%;
+      left: 60%;
       width: 35rem;
 
     }
@@ -292,7 +297,7 @@ width: 100%;
 
   .intro {
     font-size: 1.5rem;
-     width: 30%;
+     width: 20%;
     min-height: 100vh;
    
     p {
@@ -307,7 +312,10 @@ width: 100%;
       }
     }
   }
-
+  #description{
+    width: fit-content;
+    width: 70%;
+  }
   .contactlink {
     margin-right: 50px;
     color: $merry;

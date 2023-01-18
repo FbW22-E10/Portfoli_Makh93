@@ -53,6 +53,7 @@ main {
       margin-bottom: 5px;
       width: 80%;
       
+      
     }
   }
   
@@ -72,7 +73,7 @@ main {
       }      
       .div1{
   position: relative;
-          height: 10px;
+          height: 15px;
           width: 100%;
       border: 3px solid;
       margin-top: 5px;
@@ -83,14 +84,15 @@ main {
       }
   
       .divJs{
-          height: 5px;
+          height: 10px;
           box-shadow: inset 10px 10px 25px $secondary;
           border-radius: 50px;
           animation: js-fill 2s forwards;
     }
    
       .divH{
-          height: 5px;
+        width: 85%;
+          height: 10px;
           box-shadow: inset 10px 10px 25px $danger; border-radius: 50px;
        
        animation: html-fill 2.5s ;
@@ -100,7 +102,7 @@ main {
         
      .divcss{
      
-          height: 5px;
+          height: 10px;
           box-shadow: inset 10px 10px 25px $perry; border-radius: 50px;
         
           animation: css-fill 2.5s forwards;
@@ -111,23 +113,23 @@ main {
         
         }
           .divC{
-              height: 5px;
+              height: 10px;
               box-shadow: inset 10px 10px 25px $merry; border-radius: 50px;
               animation: html-fill 2.5s ;
         
             }
           .divL{
-              height: 5px;
+              height: 10px;
               box-shadow: inset 10px 10px 25px $secondary; border-radius: 50px;
               animation: css-fill 2.5s forwards;
         
             }
           .divT{
-              height: 5px;
+              height: 10px;
               box-shadow: inset 10px 10px 25px $danger; border-radius: 50px;
               animation: css-fill 2.5s forwards;  }
-          .divLd{width: 90%;
-              height: 5px;
+          .divLd{width: 85%;
+              height: 10px;
               box-shadow: inset 10px 10px 25px $perry; border-radius: 50px;
               animation: html-fill 2.5s ;
             }
@@ -237,7 +239,6 @@ main {
    
   
   }
-
 
 
 p{display: block;}
@@ -381,7 +382,7 @@ p{display: block;}
       
   }
   i{
-    color: $primary;
+    color: $danger;
   }      
   .div1{
 
