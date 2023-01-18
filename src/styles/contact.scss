@@ -109,7 +109,7 @@ body {
   background-image: url(../Images/ruvim-noga-o0R4iqk1eRQ-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 0px 0px 100vmax rgba(0, 0, 0, 0.616);
+  box-shadow: inset 0px 0px 0px 100vmax rgba(0, 0, 0, 0.363);
 }
 .navbar {
   display: none;
@@ -295,7 +295,7 @@ min-height: 100vh;
       background-color: $primary;
       border: none;
       border-radius: 10px;
-    
+    color: $perry;
       &:hover {
         border: 2px solid $perry;
       }
